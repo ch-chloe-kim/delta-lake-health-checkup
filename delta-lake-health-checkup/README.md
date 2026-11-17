@@ -20,7 +20,7 @@ Context checked against real sources: Korean medical law requires both the corre
 
 ## Proposed architecture
 
-!\[Pipeline architecture](images/00\_architecture.png)
+!\[Pipeline architecture](images/00\_architecture\_en.png)
 
 * **Spark batch 1** cleans the nightly CSV extract and applies it to the results table with `MERGE` (only changed rows are rewritten).
 * **Change Data Feed (CDF)** exposes each change as `update\_preimage` / `update\_postimage` rows with commit version and timestamp.
